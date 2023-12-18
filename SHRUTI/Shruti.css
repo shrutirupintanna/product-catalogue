@@ -1,0 +1,16 @@
+h1{
+    color: yellow;
+    text-decoration: underline;
+}
+
+#Internal{
+    color: green;
+}
+
+.external{
+    color: red;
+}
+
+.inline{
+    color: blue;
+}

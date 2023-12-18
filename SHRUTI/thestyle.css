@@ -1,0 +1,18 @@
+/* This is the syntax for external css*/
+
+
+.myhead{
+    font:20px;
+    color:blue;
+    text-decoration:underline;
+}
+
+p{
+    color:red;
+    font:50px;
+    text-decoration:underline;
+}
+
+body{
+    text-decoration:underline ;
+}
