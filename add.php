@@ -2,15 +2,15 @@
     <head>
         <title>Add page</title>
     </head>
-    <body bgcolor="red">
-      <p align="right"> 
-        <a href="add.html">Add page</a>
-        <a href="index.html">Index page</a>
-        <a href="about.html">About page</a>
-        <a href="contact.html">Contact page</a> 
-        <a href="display.html">Display</a>
-      </p>
+    <body >
+    <div class="container">
+        <div class="row" style="font-size: large;border: 2px solid black">
+                <?php
+            include("nav.html");
+            ?>
+            </div>
       <h1 style="text-decoration: aqua ; font: size 2px ">Please fill in the form below</h1>
+      <div class="row">
       <form>
         <div>
             <label style="font-size: xx-large;">First name</label>
@@ -45,5 +45,6 @@
         <button class="btn-default" style="font-size: x-large;">Submit</button>
         
       </form>
+</div>
     </body>
 </html>

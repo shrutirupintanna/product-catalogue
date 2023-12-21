@@ -6,11 +6,9 @@
     <body>
 <div class="container">
  <div class="row" style="border: 2px aqua solid">
-            <a href="add.html">Add page</a>
-        <a href="index.html">Index page</a>
-        <a href="about.html">About page</a>
-        <a href="contact.html">Contact page</a> 
-        <a href="display.html">Display page</a>
+             <?php
+            include("nav.html");
+            ?>
 </div>
 
     <div class="row" style="border: 2px solid palevioletred">
