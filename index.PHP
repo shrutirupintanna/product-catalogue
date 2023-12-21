@@ -1,12 +1,86 @@
 <html>
     <head>
-        <title>r....</title>
+        <title>Index page</title>
+       
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <php> 
-    echo "Hello, World!";
-        </php>
-   
-    </body>
+      <div class="container">
+        <div class="row" style="font-size: large;border: 2px solid black">
+          <nav class=" navbar-expand-lg navbar-dark bg-black ">
+            <a class="navbar-brand"><strong><i>shrutibusiness</i></strong></a>
+            <button class="navbar-toggler" type="button" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="add.html">Add products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Information</a>
+                    </li>
+                    <li class="nav-item right">
+                        <a class="nav-link" href="display.html">Our display</a>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
+       </div>
+          
+        <div class="row" style="border : 1px solid black">
+          <div class="col-lg-4" style="border: 2px solid rgb(11, 20, 11)">
+            <p style="font-size: x-large; ">Electronnics like smart tvs,watches etc</p>
+          </div>
+          
+          <div class="col-lg-4" style="border: 1px solid black">
+            <div id="carouselExample" class="carousel slide"> 
+              <center>
+              <div class="carousel-inner bg-secondary">
+                <div class="carousel-item active">
+                 <div slide data-bs-ride="carousel" data-bs-interal="5000">
+                <p class="text-bg-danger display-6">Slide 1</p>
+                <img src="image1.jpg" alt="GFG" width="200" height="400" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                <p class="text-bg-danger display-6">Slide 2</p>
+                <img src="image2.png" alt="GFG" width="200" height="400" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                <p class="text-bg-danger display-6">Slide 3</p>
+                <img src="image3.jpg" alt="GFG" width="200" height="400" class="d-block w-50" alt="...">
+                </div>
+              </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+              </center>
+              </div>
+          
+          </div>
+          
+          <div class="col-lg-4" style="border: 2px solid black">
+            <p style="font-size: x-large; ">for more infomation please go to the display page </p>
+          </div>
+        </div>
+          
+        <div class="row" style=" border: 2px solid black">
+          <p style="font-size: x-large; ">this is where you will find qualified items</p>
+        </div>
+      </div>
+        <script src="js/bootstrap.min.js"></script>
+       </body>
 </html>
-
