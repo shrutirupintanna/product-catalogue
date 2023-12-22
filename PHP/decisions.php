@@ -5,11 +5,13 @@
 </head>
 <body>
     <?php
-    $d=date("D")
-    if($d=="Fri")
-    {echo "go to the mosque"}
-    else
-    {echo "enjoy your weekend"}
+    $d=date("D");
+    if($d=="Fri"){
+        echo " today is $d,go to the mosque ";
+    }
+    else{
+        echo "Today is $d, enjoy your weekend";
+    }
     ?>
 </body>
 </html>
