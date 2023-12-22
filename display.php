@@ -16,7 +16,7 @@
               
                <div class="row" style="border: 1px solid blue">
     <div class="col-lg-4" style="border: 1px solid rgb(68, 193, 204) ">
-    <img src="image3.jpg" class="img-fluid">
+   <img src="image3.jpg">
     </div>
     <div class="col-lg-4" style="border: 1px solid rgb(93, 137, 177) ">
       
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="row" style="border: 1px solid blue">
-                   <marquee direction="right"><p style="font-size: large; ;"><b>This website is maintained and managed by the head of product-cataloque<br />
+                   <marquee direction="left"><p style="font-size: large; ;"><b>This website is maintained and managed by the head of product-cataloque<br />
                     for more information please contact us using the details in the contact page</b></p>
                    </marquee>     
                     </div>

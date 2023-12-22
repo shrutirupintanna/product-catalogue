@@ -1,17 +1,19 @@
 <html>
     <head>
         <title>Add page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body >
-    <div class="container">
-        <div class="row" style="font-size: large;border: 2px solid black">
+    <body>
+        <div class="container">
+
+    <div class="row" style="font-size: large;border: 2px solid black">
                 <?php
             include("nav.html");
             ?>
             </div>
-      <h1 style="text-decoration: aqua ; font: size 2px ">Please fill in the form below</h1>
-      <div class="row">
-      <form>
+ <div class="row" style="border: 2px solid palevioletred">
+    <form>
         <div>
             <label style="font-size: xx-large;">First name</label>
             <input type="text" place holder="type your 1st name" name="firstName" required>
@@ -45,6 +47,8 @@
         <button class="btn-default" style="font-size: x-large;">Submit</button>
         
       </form>
+
+
 </div>
-    </body>
+</body>
 </html>
