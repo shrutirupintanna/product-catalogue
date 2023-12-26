@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Index page</title>
+        <title>about page</title>
        
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
