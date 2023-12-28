@@ -28,7 +28,7 @@
             </div>
             <img src="image1.jpg" >
             <p class="username">@shrutitanna</p>
-            <p class="one"> I love to learn html</p>
+            <p class="one"> I love to learn </p>
         </div>
     </body>
 </html>
