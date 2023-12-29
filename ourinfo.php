@@ -3,11 +3,11 @@
         <title>index page.</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
       <style>
-        
-        body  {
-            background-image:screenshot.png ;
-           
-         }
+        body {
+            background-image:url(p5.png);
+            background-size:cover;
+        }
+      
         
       </style>
        

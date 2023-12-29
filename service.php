@@ -3,33 +3,55 @@
         <title>index page.</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
-        img {
+
+       body{
+        background-image:url(p2.png);
+        background-size:cover;
+        color: white;
+       }
+
+       img {
             width:500px;
             border-radius:50px;
-            float:left;
+            float:right;
             margin-right:10px;
 
-        }
-        .username  {
-            font-weight:bold;
-        }
-
-        .one{
-            font: size 2px;
+        .position {
+            image:"cover"
         }
     </style>
     </head>
-    <body>
+    <body >
         <div class="container">
             <div class="row" style="font-size: large;border: 2px solid black">
                     <?php
                 include("nav.html");
                 ?>
             </div>
+           
+            <div class="row" style="font-size: large;border: 2px solid black">
+                   <p>Below are services we provide</p>
+                   <div class="col-lg-4" class="position">
+                        Online services
+                        <img src="online.png" >
+                   </div>
+
+                   <div class="col-lg-4" class="position">
+                        Delivery services
+                        <img src="deliveryservices.png">
+                   </div> 
+                   
+                   <div class="col-lg-4">
+                        
+                   </div> 
+                   
+            </div>
+          
             <img src="image1.jpg" >
             <p class="username">@shrutitanna</p>
-            <p class="one"> I love to learn html</p>
+            <p class="one"> I love to learn </p>
+
         </div>
     </body>
 </html>
-           
+          

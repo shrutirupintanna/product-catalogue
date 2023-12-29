@@ -3,7 +3,7 @@
         <title>index page.</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
-        img {
+       img {
             width:500px;
             border-radius:50px;
             float:left;
