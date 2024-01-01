@@ -9,7 +9,7 @@
             background-size:cover;
             color: white;
                  }
-            .card {
+                 .card {
                 display:flex;
                 flex-direction: column;
                 background-color:grey;
@@ -19,7 +19,9 @@
                 width:100%;
                 object-fit: contain;
             }
-
+            .pp{
+                color:blue;
+            }
 
 
         </style>
@@ -49,7 +51,10 @@
                </div>
                <div class="row">
               <p> We hope we provide the best services to you <br /> <br />Our contact is in the contact page 
-                please use that page to contact us <br /> <br />Thank you for visiting our website</p>
+                please use that page to contact us 
+                <br /> <br /><b><i>More images of the products are shown in the display page</i></b>
+                <br /> <br /></p>
+                <p class="pp" ><b><i>Thank you for visiting our website </i></b></p>
                </div>
 
                <div class="row" style="border: 1px solid blue">

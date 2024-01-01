@@ -142,7 +142,7 @@
                 </div>
                 <div class="col-lg-4">
                <p>These have many designs as shown<br />They are used in places as they last longer<br />
-                They also have many colors </p>
+                They also have many colors <br /><b><i>More images are in the display page</i></b></p>
                 </div>
                 <div class="col-lg-4">
                 <?php

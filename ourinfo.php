@@ -45,7 +45,7 @@
                         <hr />
             
                 <h2 style="font-size:x-large; ">
-                    To reach us please fill in the form below 
+                    To reach us please fill in the form below ;
                 </h2>   
                 
         <form>
