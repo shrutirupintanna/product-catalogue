@@ -6,8 +6,17 @@
         body {
             background-image:url(p5.png);
             background-size:cover;
+            color: white;
         }
-      
+       img {
+                width:500px;
+                border-radius:50px;
+                float:right;
+                margin-right:10px;
+        }
+        .form {
+            border-radius:50px;
+        }
         
       </style>
        
@@ -29,7 +38,7 @@
 
                 <p style="font-size:x-large"><b>You can contact as through the following ;</b></p>
                <p><b> <i>Our email</i></b>: productcatalogue0123@gmail.com<br />
-                <b><i>Our whatsapp contacts</i></b>: 071234567 , 077654321
+                <b><i>Our whatsapp contacts</i></b>: + 256234567 , + 256654321 , + 256876459
                 </p>
                 
             </div>
@@ -42,22 +51,22 @@
         <form>
             <div>
                 <label><b>First Name</b></label>
-                <input type="text" place holder="Type your first name"  name="firstName" required>
+                <input type="text" place holder="Type your first name"  name="firstName" class="form" required>
             </div>
     
             <div >
                  <label><b>Second Name</b></label>
-                <input type="text"  place holder="Type your second name" name="lastName" required>
+                <input type="text"  place holder="Type your second name" name="lastName"class="form" required>
             </div>
     
             <div>
                  <label><b>Telephone</b></label>
-                <input type="tel" place holder="Type your tel no." name="telephone" required>
+                <input type="tel" place holder="Type your tel no." name="telephone" class="form" required>
             </div>
     
             <div>
                  <label><b>Email</b></label>
-                <input type="email" place holder="Type your email"  name="email" required>
+                <input type="email" place holder="Type your email"  name="email"class="form" required>
             </div> 
             <br />
 
@@ -71,7 +80,7 @@
             <br />
             <div>
             <label><b>Address</b></label>
-            <input type="text" place holder="type your home address" name="address" required>
+            <input type="text" place holder="type your home address" name="address"class="form" required>
         </div>
 
            
@@ -80,8 +89,18 @@
             <button  class="btn btn-default"><b>Submit</b></button>
         </form>
             </div>
+            <img src="LOGO.png" >
+                <p>We provide the best quality products<br />
+                 in all catagories e.g electronics,grocery and more </p>
+                <p>Our products come from various places in the world </p>
+                <p>As our stock has different variourity products you have different choises</p>
 
-            
+            <div class="row" style="border: 1px solid blue;color:black">
+                   <marquee direction="left"><p style="font-size: large; ;"><b>This website is maintained and managed by the head of product-cataloque<br />
+                    for more information please contact us using the details in this page</b></p>
+                   </marquee>     
+                    </div>
+
         </div>
         <script src="js/bootstrap.min.js"></script>
     </body>
