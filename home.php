@@ -3,7 +3,7 @@
         <title>index page.</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
       <style>
-        body {
+       body {
             background-image:url(p1.png);
             background-size:cover;
             color:white;

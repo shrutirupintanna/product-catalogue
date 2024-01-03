@@ -15,7 +15,7 @@
                 margin-right:10px;
         }
         .form {
-            border-radius:50px;
+            border-radius:10px;
         }
         
       </style>
