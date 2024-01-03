@@ -51,7 +51,7 @@
         <form>
             <div>
                 <label><b>First Name</b></label>
-                <input type="text" place holder="Type your first name"  name="firstName" class="form" required>
+                <input type="text" place holder="Type your first name"  name="firstName"class="form" required>
             </div>
     
             <div >
@@ -86,7 +86,7 @@
            
             <br />
     
-            <button  class="btn btn-default"><b>Submit</b></button>
+            <button class="form" class="btn btn-default"><b>Submit</b></button>
         </form>
             </div>
             <img src="LOGO.png" >
