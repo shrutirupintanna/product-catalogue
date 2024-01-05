@@ -44,22 +44,22 @@
         <form>
             <div>
                 <label><b>First Name</b></label>
-                <input type="text" place holder="Type your first name"  name="firstName"class="form" required>
+                <input type="text" placeholder="Type your first name"  name="firstName"class="form" required>
             </div>
     
             <div >
                  <label><b>Second Name</b></label>
-                <input type="text"  place holder="Type your second name" name="lastName"class="form" required>
+                <input type="text"  placeholder="Type your second name" name="lastName"class="form" required>
             </div>
     
             <div>
                  <label><b>Telephone</b></label>
-                <input type="tel" place holder="Type your tel no." name="telephone" class="form" required>
+                <input type="tel" placeholder="Type your tel no." name="telephone" class="form" required>
             </div>
     
             <div>
                  <label><b>Email</b></label>
-                <input type="email" place holder="Type your email"  name="email"class="form" required>
+                <input type="email" placeholder="Type your email"  name="email"class="form" required>
             </div> 
             <br />
 
@@ -79,7 +79,7 @@
            
             <br />
     
-            <button class="form" class="btn btn-default"><b>Submit</b></button>
+            <button type="submit" class="form" class="btn btn-default"><b>Submit</b></button>
         </form>
             </div>  
                 </div>
