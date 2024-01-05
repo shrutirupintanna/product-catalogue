@@ -10,12 +10,6 @@
             color: white;
         }
 
-        img {
-                width:500px;
-                border-radius:50px;
-                float:right;
-                margin-right:10px;
-        }
 
         #image{
             align:"center"
@@ -25,7 +19,7 @@
         </head>
         <body >
             <div class="container">
-                <div class="row" style="font-size: large;border: 2px solid black">
+                <div class="row">
                         <?php
                     include("nav.html");
                     ?>
@@ -65,6 +59,7 @@
                 </div>
 
             </div>
+            <script src="js/bootstrap.min.js"></script>
         </body>
     </html>
             

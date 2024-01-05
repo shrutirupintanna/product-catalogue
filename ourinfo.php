@@ -8,12 +8,7 @@
             background-size:cover;
             color: white;
         }
-       img {
-                width:500px;
-                border-radius:50px;
-                float:right;
-                margin-right:10px;
-        }
+      
         .form {
             border-radius:10px;
         }
@@ -31,19 +26,17 @@
             </div>
 
             <div class="row" style="background-image:screenshot.png;padding-bottom:100px;">
+                <div class="col-lg-6">
+                        <h1  style="font-size:large; ">
+                            Our contact information
+                        </h1> 
 
-                <h1  style="font-size:large; ">
-                    Our contact information
-                </h1> 
-
-                <p style="font-size:x-large"><b>You can contact as through the following ;</b></p>
-               <p><b> <i>Our email</i></b>: productcatalogue0123@gmail.com<br />
-                <b><i>Our whatsapp contacts</i></b>: + 256234567 , + 256654321 , + 256876459
-                </p>
-                
-            </div>
-                        <hr />
-            
+                        <p style="font-size:x-large"><b>You can contact as through the following ;</b></p>
+                    <p><b> <i>Our email</i></b>: productcatalogue0123@gmail.com<br />
+                        <b><i>Our whatsapp contacts</i></b>: + 256234567 , + 256654321 , + 256876459
+                        </p>
+                </div>
+                <div class="col-lg-6">
                 <h2 style="font-size:x-large; ">
                     To reach us please fill in the form below ;
                 </h2>   
@@ -88,12 +81,13 @@
     
             <button class="form" class="btn btn-default"><b>Submit</b></button>
         </form>
+            </div>  
+                </div>
             </div>
-            <img src="LOGO.png" >
-                <p>We provide the best quality products<br />
-                 in all catagories e.g electronics,grocery and more </p>
-                <p>Our products come from various places in the world </p>
-                <p>As our stock has different variourity products you have different choises</p>
+                       
+            
+              <img src="LOGO.png">
+         
 
             <div class="row" style="border: 1px solid blue;color:black">
                    <marquee direction="left"><p style="font-size: large; ;"><b>This website is maintained and managed by the head of product-cataloque<br />

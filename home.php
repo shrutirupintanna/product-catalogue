@@ -103,18 +103,21 @@
 
     </div>
     <div class="row">
-               <?php
-               
-               function greetings($name,$dt) 
-              
-               
-               { echo "Today is , $name and it is $dt";}
+        <?php
 
-                $dt = "11:00";
-                $name = "Thursday";
-                greetings($name,$dt);
-               
-               ?>
+            function displayCurrentDateTime() {
+              
+                date_default_timezone_set('Africa/Nairobi');
+
+                $currentDateTime = date('Y-m-d H:i:s');
+
+                echo "Current Date and Time: " . $currentDateTime;
+            }
+
+            displayCurrentDateTime();
+
+            ?>
+
             </div>
            
             <div class="row" style="border: 1px solid blue">
