@@ -9,6 +9,13 @@ $result = mysqli_query($data,$query);
 <head>
     <title>Fetch data </title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-image:url(p5.png);
+            background-size:cover;
+            color: white;
+        }
+    </style>
 </head>
 <body class="bg-dark">
     <div class="container">
