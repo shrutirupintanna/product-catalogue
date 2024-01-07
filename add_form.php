@@ -17,7 +17,7 @@
 
         <div class="form-group">
             <label>ProductName</label>
-            <input type="text" name="ProductName" class="form-control" placeholder="Give your full name">
+            <input type="text" name="ProductName" class="form-control" placeholder="Give the products name">
         </div>
 
         <div class="form-group">
