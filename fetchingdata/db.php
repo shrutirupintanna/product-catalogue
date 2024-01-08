@@ -1,7 +1,7 @@
 <?php
 
-    $data = mysqli_connect("localhost","root","","productcatalogue");
-    if(!$data) {
+    $con = mysqli_connect("localhost","root","","productcatalogue");
+    if(!$con) {
         die("Connection failed");
     }
 

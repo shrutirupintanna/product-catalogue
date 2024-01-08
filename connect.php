@@ -6,12 +6,10 @@
 
 $con = mysqli_connect($mysql_host,$mysql_user,$mysql_password,$database);
 
-        if($con) {
-            echo "connected successfully to database";
-        }
+if($con) {
+    echo ("connection successfully connected")
 
-        else {
-            echo "connection to database has failed";
-        }
-
+    else 
+        echo ("connection failed")
+    }
 ?>

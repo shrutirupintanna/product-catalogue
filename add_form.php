@@ -1,8 +1,14 @@
-
 <html >
 <head>
     <title>Add Form</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    body{       
+            background-image:url(screenshot.png);
+            background-size:cover;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
