@@ -6,7 +6,7 @@
     body{       
             background-image:url(screenshot.png);
             background-size:cover;
-            color: white;
+            color: black;
         }
     </style>
 </head>

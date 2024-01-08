@@ -412,7 +412,19 @@ home with cards
     </body>
 </html>
 
-   
+echo ("connection successfully connected ");
+
+
+if 
+
+if($con) {
+    echo ("connection successfully connected ");
+}
+    else {
+        die("connection failed" . mysqli_error($connect));
+    }
+
+?>
 
        
           

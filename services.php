@@ -71,8 +71,8 @@ $result = mysqli_query($con,$query);
                     <td>Price</td>
                     <td>Quantity ID</td>
                     <td>ProductDescription</td>
-                    <td>Delete</td>
-                    <td>Edit</td>
+                    <td>Action</td>
+                   
                 </tr>
                 <tr>
                    <?php
@@ -84,8 +84,9 @@ $result = mysqli_query($con,$query);
                     <td><?php echo $row['Price'] ?></td>
                     <td><?php echo $row['Quantity'] ?></td>
                     <td><?php echo $row['ProductDescription'] ?></td>
-                    <td><a href="#" class="btn btn-success">Delete</a></td>
-                    <td><a href="#" class="btn btn-default">Edit</a></td>
+                  
+                    <td><a href="update.php?id='<?php $row['ID'];?>'">Update data</a></td>
+                    <td><a href="update.php?id='<?php $row['ID'];?>'">Delete</a></td>
 
                 </tr>
                     <?php

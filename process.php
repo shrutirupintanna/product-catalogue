@@ -12,6 +12,12 @@
 
     mysqli_stmt_bind_param($statement,"ssss",$name,$price,$quantity,$description);
 
-    mysqli_stmt_execute($statement);
-    echo "data submitted successfully";
+    if(mysqli_stmt_execute($statement)){
+    header("Location:  /services.php");
+    }
+    else{
+        die("Execute failed;" .mysqli_error($connect));
+    }
+    
+   
 ?>
