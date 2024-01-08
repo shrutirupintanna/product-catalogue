@@ -85,8 +85,10 @@ $result = mysqli_query($con,$query);
                     <td><?php echo $row['Quantity'] ?></td>
                     <td><?php echo $row['ProductDescription'] ?></td>
                   
-                    <td><a href="update.php?id='<?php $row['ID'];?>'">Update data</a></td>
-                    <td><a href="update.php?id='<?php $row['ID'];?>'">Delete</a></td>
+                    <td>
+                        <a href="updateform.php?id='<?php $row['ID'];?>'">Update data</a>
+                    <a href="updateform.php?id='<?php $row['ID'];?>'">Delete</a>
+                </td>
 
                 </tr>
                     <?php

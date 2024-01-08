@@ -13,7 +13,7 @@
     mysqli_stmt_bind_param($statement,"ssss",$name,$price,$quantity,$description);
 
     if(mysqli_stmt_execute($statement)){
-    header("Location: services.php");
+    header("Location:  /services.php");
     }
     else{
         die("Execute failed;" .mysqli_error($connect));
