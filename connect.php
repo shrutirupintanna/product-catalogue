@@ -4,9 +4,9 @@
         $mysql_password='';
         $database='productcatalogue';
 
-$con = mysqli_connect($mysql_host,$mysql_user,$mysql_password,$database);
+$connect = mysqli_connect($mysql_host,$mysql_user,$mysql_password,$database);
 
-if($con) {
+if($connect) {
     echo ("connection successfully connected ");
 }
     else {

@@ -1,8 +1,11 @@
-<?php
 
-require_once('fetchingdata/db.php');
-$query = "select *  from products";
-$result = mysqli_query($con,$query);
+<?php
+session_start();
+
+require_once "connect.php";
+
+$data = "SELECT * FROM products";
+$result = mysqli_query($connect, $data);
 
 ?>
    <html>
@@ -12,7 +15,7 @@ $result = mysqli_query($con,$query);
             <style>
 
             body{       
-            background-image:url(p2.png);
+            background-image:url(images/p2.png);
             background-size:cover;
             color: white;
         }
@@ -67,10 +70,6 @@ $result = mysqli_query($con,$query);
             <table class="table table-bordered text-center">
                 <tr class="bg-dark text-white">
                     <td> ID</td>
-                    <td>ProductName</td>
-                    <td>Price</td>
-                    <td>Quantity ID</td>
-                    <td>ProductDescription</td>
                     <td>Action</td>
                    
                 </tr>
@@ -80,16 +79,9 @@ $result = mysqli_query($con,$query);
                      {
                     ?>
                      <td><?php echo $row['ID'] ?></td>
-                    <td><?php echo $row['ProductName'] ?></td>
-                    <td><?php echo $row['Price'] ?></td>
-                    <td><?php echo $row['Quantity'] ?></td>
-                    <td><?php echo $row['ProductDescription'] ?></td>
+                   
+                   <td><a href="updateform.php?id=<?php echo $row['ID'] ?>" class="btn btn-primary">Update</a></td>
                   
-                    <td>
-                        <a href="updateform.php?id='<?php $row['ID'];?>'">Update data</a>
-                    <a href="updateform.php?id='<?php $row['ID'];?>'">Delete</a>
-                </td>
-
                 </tr>
                     <?php
                     }

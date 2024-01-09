@@ -6,7 +6,7 @@
                 
 
             body{       
-            background-image:url(p4.png);
+            background-image:url(images/p4.png);
             background-size:cover;
             color: white;
                  }

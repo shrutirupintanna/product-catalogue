@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
       <style>
         body{      
-            background-image:url(p3.png);
+            background-image:url(images/p3.png);
             background-size:cover;
             color: white;
                  }

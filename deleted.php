@@ -426,8 +426,21 @@ if($con) {
 
 ?>
 
+<td>
+                        <a href="updateform.php?id='<?php $row['ID'];?>'">Update data</a>
+                    <a href="updateform.php?id='<?php $row['ID'];?>'">Delete</a>
+                </td>
        
-          
+                <td>ProductName</td>
+                    <td>Price</td>
+                    <td>Quantity ID</td>
+                    <td>ProductDescription</td>
+                    <td>Action</td>
+
+                    <td><?php echo $row['ProductName'] ?></td>
+                    <td><?php echo $row['Price'] ?></td>
+                    <td><?php echo $row['Quantity'] ?></td>
+                    <td><?php echo $row['ProductDescription'] ?></td>
       
          
        
