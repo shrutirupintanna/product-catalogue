@@ -24,14 +24,14 @@
             <div class="row">
                 <div class="col-lg-4">
                     <?php
-                    include("card.html")
+                    include("cardsforhome/card.html")
                     ?>
                     
                 </div>
 
                 <div class="col-lg-4">
                 <?php
-                    include("card1.html")
+                    include("cardsforhome/card1.html")
                     ?>
                    <p>In our stock we provide all electric items<br />Below are common electronics in our store</p>
                     <p>Smart tvs,watches,phones<br />Fridges<br />Irons<br />Washing machines<br />and much more</p>
@@ -40,7 +40,7 @@
 
                 <div class="col-lg-4">
                     <?php
-                        include("card2.html")
+                        include("cardsforhome/card2.html")
                         ?>
                     <p>We deal with the following electric companies ;</p>
                    <p>HISENSE<br />SAMSUNG<br />APPLE<br />hp<br />VIVO<br />...</p> </p>
@@ -52,21 +52,21 @@
             <div class="row">
                 <div class="col-lg-4">
                     <?php
-                    include("card3.html")
+                    include("cardsforhome/card3.html")
                     ?>
                     <p>In stationary,<br />we provide all stationary products <br />as shown </p>
                 </div>
 
                 <div class="col-lg-4">
                 <?php
-                    include("card4.html")
+                    include("cardsforhome/card4.html")
                     ?>
                    <p>Our products are imported </p>
                 </div>
 
                 <div class="col-lg-4">
                     <?php
-                        include("card5.html")
+                        include("cardsforhome/card5.html")
                         ?>
                 <p>
                 In clothings we provide
@@ -81,21 +81,21 @@
     <div class="row">
                 <div class="col-lg-4">
                     <?php
-                    include("card6.html")
+                    include("cardsforhome/card6.html")
                     ?>
                    <p>In jellwery we provide quality plastic products with different colors and designs</p> 
                 </div>
 
                 <div class="col-lg-4">
                 <?php
-                    include("card7.html")
+                    include("cardsforhome/card7.html")
                     ?>
                    <p> we also provide wall decorators</p>
                 </div>
 
                 <div class="col-lg-4">
                     <?php
-                        include("card8.html")
+                        include("cardsforhome/card8.html")
                         ?>
                 <p>These came in different colors and designs</p>
                    

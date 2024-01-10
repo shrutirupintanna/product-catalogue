@@ -432,15 +432,33 @@ if($con) {
                 </td>
        
                 <td>ProductName</td>
+                    
+
+                <tr class="bg-dark text-white">
+                    <td> ID</td>
                     <td>Price</td>
                     <td>Quantity ID</td>
                     <td>ProductDescription</td>
                     <td>Action</td>
-
-                    <td><?php echo $row['ProductName'] ?></td>
+                   
+                </tr>
+                <tr>
+                   <?php
+                    while($row = mysqli_fetch_assoc($result))
+                     {
+                    ?>
+                     <td><?php echo $row['ID'] ?></td>
+                     <td><?php echo $row['ProductName'] ?></td>
                     <td><?php echo $row['Price'] ?></td>
                     <td><?php echo $row['Quantity'] ?></td>
                     <td><?php echo $row['ProductDescription'] ?></td>
+                   <td><a href="updateform.php?id=<?php echo $row['ID'] ?>" class="btn btn-primary">Update</a></td>
+                  
+                </tr>
+                    <?php
+                    }
+
+                   ?>
       
          
        
