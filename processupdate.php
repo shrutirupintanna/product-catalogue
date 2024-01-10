@@ -8,7 +8,7 @@
 
     $query = "INSERT INTO products (ProductName,Price,Quantity,ProductDescription) VALUES(?,?,?,?)";
 
-    $statement= mysqli_prepare($con , $query);
+    $statement= mysqli_prepare($connect , $query);
 
     mysqli_stmt_bind_param($statement,"ssss",$name,$price,$quantity,$description);
 

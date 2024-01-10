@@ -8,6 +8,10 @@
             background-size:cover;
             color:white;
         }
+        .card {
+            background-color:grey;
+            color:white;
+        }
       </style>
        
     </head>
@@ -124,6 +128,19 @@
                    <marquee direction="left"><p style="font-size: large;color:white ;"><b>This website is maintained and managed by the head of product-cataloque<br />
                     for more information please contact us using the details in the contact page</b></p>
                    </marquee>     
+            </div>
+            <div class="row" style="border: 1px solid blue">
+                <div class="card">
+                    <div class="card-header">
+                        <?php echo $row['ProductName'] . " " .  $row['Price'] ; ?>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"<?php echo $row['Quantity']; ?>></p>
+                    </div>
+                    <div class="card-footer">
+                    <?php echo  $row['ProductDescription'];?>
+                    </div>
+                </div>     
             </div>
 
             </div>
