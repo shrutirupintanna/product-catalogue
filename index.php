@@ -1,3 +1,9 @@
+<?php
+require_once('connect.php');
+$query = "select *  from products";
+$result = mysqli_query($connect,$query);
+?>
+
 <html>
     <head>
         <title>index page.</title>
@@ -130,18 +136,36 @@
                    </marquee>     
             </div>
             <div class="row" style="border: 1px solid blue">
-                <div class="card">
-                    <div class="card-header">
-                        <?php echo $row['ProductName'] . " " .  $row['Price'] ; ?>
+           
+               <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <?php echo $connect['ProductName']; ?>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text"<?php echo $row['Quantity']; ?>></p>
+               </div>
+               <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <?php echo $connect['ProductName']; ?>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                    <?php echo  $row['ProductDescription'];?>
+               </div>
+               <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <?php echo $connect['ProductName']; ?>
+                        </div>
                     </div>
-                </div>     
-            </div>
+               </div>
+               <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <?php echo $connect['ProductName']; ?>
+                        </div>
+                    </div>
+               </div>
+
 
             </div>
         <script src="js/bootstrap.min.js"></script>
