@@ -1,6 +1,6 @@
 <?php
 
-require_once('fetchingdata/db.php');
+require_once('connect.php');
 $query = "select *  from products";
 $result = mysqli_query($con,$query);
 

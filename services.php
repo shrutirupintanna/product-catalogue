@@ -1,7 +1,9 @@
 <?php
+
 require_once('connect.php');
 $query = "select *  from products";
 $result = mysqli_query($connect,$query);
+
 ?>
    <html>
         <head>
@@ -43,13 +45,10 @@ $result = mysqli_query($connect,$query);
                     Offers,waranty services and discounts are also available  
                                 <img src="image1.jpg" class="img-fluid" >
                             <p>We provide the best quality products<br />
-                            in all catagories e.g electronics,grocery and more </p>
-                           
-                            
-                           
+                            in all catagories e.g electronics,grocery and more </p>     
                     </div> 
-                </div>
-                <div class="row mt-5">
+            </div>
+            <div class="row mt-5">
           <div class="col">
             <div class="card mt-5">
                 <div class="card-header">
@@ -64,7 +63,7 @@ $result = mysqli_query($connect,$query);
                     <td>Quantity ID</td>
                     <td>ProductDescription</td>
                     <td>Action</td>
-                   
+                    
                 </tr>
                 <tr>
                    <?php
@@ -76,14 +75,13 @@ $result = mysqli_query($connect,$query);
                     <td><?php echo $row['Price'] ?></td>
                     <td><?php echo $row['Quantity'] ?></td>
                     <td><?php echo $row['ProductDescription'] ?></td>
-                    <td>
-                        <a href="updateform.php?id='<?php $row['ID'];?>'">Update data</a>
-                    <a href="updateform.php?id='<?php $row['ID'];?>'">Delete</a>
-                </td>
+                    <td><a href="updateform.php?id=<?php echo $row['ID'];?>">Update Data</a>
+                    <a href="updateform.php?id=<?php echo $row['ID'];?>">Delete</a></td>
 
                 </tr>
                     <?php
                     }
+
                    ?>
               
             </table>

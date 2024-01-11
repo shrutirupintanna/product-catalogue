@@ -1,9 +1,10 @@
-<?php
-require_once('connect.php');
-$query = "select *  from products";
-$result = mysqli_query($connect,$query);
-?>
 
+<?php
+    require_once("connect.php");
+    $query = "SELECT * FROM products";
+    $result = mysqli_query($connect,$query);
+
+?>
 <html>
     <head>
         <title>index page.</title>
@@ -15,7 +16,7 @@ $result = mysqli_query($connect,$query);
             color:white;
         }
         .card {
-            background-color:grey;
+            background-image:url(images/p2.png);
             color:white;
         }
       </style>
@@ -77,30 +78,32 @@ $result = mysqli_query($connect,$query);
                 <div class="col-lg-4">
                     <?php
                         include("cardsforhome/card5.html")
-                        ?>
-                <p>
-                In clothings we provide
-                woolen
-                silk
-                cotton clothings etc
+                    ?>
+                    <p>
+                        In clothings we provide
+                        woolen
+                        silk
+                        cotton clothings etc
                     </p>
                     
                 </div>
 
-    </div>
-    <div class="row">
+            </div>
+
+
+            <div class="row">
                 <div class="col-lg-4">
-                    <?php
-                    include("cardsforhome/card6.html")
-                    ?>
-                   <p>In jellwery we provide quality plastic products with different colors and designs</p> 
+                        <?php
+                        include("cardsforhome/card6.html")
+                        ?>
+                    <p>In jellwery we provide quality plastic products with different colors and designs</p> 
                 </div>
 
                 <div class="col-lg-4">
                 <?php
                     include("cardsforhome/card7.html")
                     ?>
-                   <p> we also provide wall decorators</p>
+                <p> we also provide wall decorators</p>
                 </div>
 
                 <div class="col-lg-4">
@@ -108,66 +111,86 @@ $result = mysqli_query($connect,$query);
                         include("cardsforhome/card8.html")
                         ?>
                 <p>These came in different colors and designs</p>
-                   
+                
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-4" class=".image">
+                    <?php
+                        include("cardsforhome/card9.html")
+                    ?>
+            </div>
+            <div class="col-lg-4" class=".image">
+            <p>we have paintings as wall decorators too </br> the above mountain is on an island 
+            </br> It is a beacon of mordern luxury,located in the island</p>
+            </div>
+
+
+            </div>
+
+
+            <div class="row">
+                <?php
+
+                    function displayCurrentDateTime() {
+                    
+                        date_default_timezone_set('Africa/Nairobi');
+
+                        $currentDateTime = date('Y-m-d H:i:s');
+
+                        echo "Current Date and Time: " . $currentDateTime;
+                    }
+
+                    displayCurrentDateTime();
+
+                    ?>
+
+            </div>
+          
+            <div class="row"> 
+                <?php
+                    while ($row = mysqli_fetch_assoc($result))
+                    {  
+                ?>
+                <div class="col-lg-4 mb-4">
+                    <div class="card" >
+                        <div class="card-header">
+                            <?php echo $row['ID'];?>
+                        </div>
+
+                        
+                        <div class="card-body">
+                        <p class="card-text"><p><b>Product name</b></p> <?php echo $row['ProductName'];?></p>
+                        </div>
+
+                        <div class="card-body">
+                        <p class="card-text"> <p><b>Price</b></p><?php echo $row['Price'];?></p>
+                        </div>
+
+                        <div class="card-body">
+                        <p class="card-text"><p><b>Quantity</b></p> <?php echo $row['Quantity'];?></p>
+                        </div>
+
+                        <div class="card-body">
+                        <p class="card-text"><p><b>Product description</b></p> <?php echo $row['ProductDescription'];?></p>
+                        </div>
+
+
+                    </div>
                 </div>
 
+                <?php
+                    }
+                ?>
+            </div>
+       
+           
+        <div class="row" style="border: 1px solid blue">
+            <marquee direction="left"><p style="font-size: large;color:white ;"><b>This website is maintained and managed by the head of product-cataloque<br />
+            for more information please contact us using the details in the contact page</b></p>
+            </marquee>     
+        </div>
     </div>
-    <div class="row">
-        <?php
-
-            function displayCurrentDateTime() {
-              
-                date_default_timezone_set('Africa/Nairobi');
-
-                $currentDateTime = date('Y-m-d H:i:s');
-
-                echo "Current Date and Time: " . $currentDateTime;
-            }
-
-            displayCurrentDateTime();
-
-            ?>
-
-            </div>
-           
-            <div class="row" style="border: 1px solid blue">
-                   <marquee direction="left"><p style="font-size: large;color:white ;"><b>This website is maintained and managed by the head of product-cataloque<br />
-                    for more information please contact us using the details in the contact page</b></p>
-                   </marquee>     
-            </div>
-            <div class="row" style="border: 1px solid blue">
-           
-               <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-content">
-                            <?php echo $connect['ProductName']; ?>
-                        </div>
-                    </div>
-               </div>
-               <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-content">
-                            <?php echo $connect['ProductName']; ?>
-                        </div>
-                    </div>
-               </div>
-               <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-content">
-                            <?php echo $connect['ProductName']; ?>
-                        </div>
-                    </div>
-               </div>
-               <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-content">
-                            <?php echo $connect['ProductName']; ?>
-                        </div>
-                    </div>
-               </div>
-
-
-            </div>
-        <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

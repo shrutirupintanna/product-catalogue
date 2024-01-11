@@ -1,4 +1,7 @@
-<html >
+<?php
+    require_once("connect.php")
+?>
+<html>
 <head>
     <title>Add Form</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,10 +20,10 @@
                 include("nav.html");
                 ?>
             </div>
-    <div class="row">
+    <div class="row" style="color:black;">
         <?php 
-        if (isset($_GET['ID'])) {
-            $id = $_GET['ID'];
+        if (isset($_GET['id'])) {
+            $id = $_GET['id'];
             require_once "connect.php";
 
             // (global variable) string $query
@@ -36,32 +39,34 @@
 
                 ?>
 
-<h1>update information</h1>   
-            <form action="processupdate.php" method="post">
+                <h1>update information</h1>   
+            <form action="processupdate.php" method="POST">
 
            <input type="hidden" name="ID" value="<?php echo $data['ID'];?>">
         
                 <div class="form-group">
                     <label>ProductName</label>
-                    <input type="text" name="ProductName" class="form-control" placeholder="Give the products name">
+                    <input type="text" name="ProductName" class="form-control" placeholder="Give the products name" value="<?php echo $data['ProductName'];?>">
                 </div>
         
                 <div class="form-group">
                     <label>Price</label>
-                    <input type="number" class="form-control" name="Price" >
+                    <input type="text" class="form-control" name="Price" value="<?php echo $data['Price'];?>" >
                 </div>
         
                 <div class="form-group">
                     <label>Quantity</label>
-                    <input type="number" class="form-control" name="Quantity"  >
+                    <input type="text" class="form-control" name="Quantity" value="<?php echo $data['Quantity'];?>" >
                 </div>
         
                 <div class="form-group">
                     <label>ProductDescription</label>
-                    <input type="text" class="form-control" name="ProductDescription" placeholder="Give a description">
-        </div>
+                    <input type="text" class="form-control" name="ProductDescription" placeholder="Give a description" value="<?php echo $data['ProductDescription'];?>">
+                </div>
+
+              
         
-                <button type="submit" class="btn btn- default">Add information</button>
+                <button type="submit" class="btn btn-primary">Update information</button>
         </form>
         <?php
             }

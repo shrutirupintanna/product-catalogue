@@ -30,33 +30,40 @@
         <body >
         <div class="container">
 
-        <div class="row">
-                
+                <div class="row">  
                     <?php
                     include("nav.html")
                     ?>
-        </div>
-               <div class="row">
-               
-                <b><p>We are available online and in malls mainly<br /><br />This web site is maily create as catalogue
-                    web site<br /> <br />We sell and buy products at best prices with the best quality<br /> <br />
-                    Our project has just been created <br /> <br /></b>
-                    
-                </p>
-               
-               </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+
+                    <b><p>We are available online and in malls mainly.<br /><br />This website is mainly created as a catalogue
+                        website<br /> <br />We sell and buy products at best prices with the best quality<br /> <br />
+                        Our project has just been created <br /> <br />
+                    </b></p>
+                    <p> We hope we provide the best services to you <br /> <br />Our contact is in the contact page 
+                    please use that page to contact us 
+                    <br /> <br /><b><i>More images of the products are shown in the display page</i></b>
+                    <br /> <br /></p>
+                    <p class="pp" ><b><i>Thank you for visiting our website </i></b></p>
+
+                    </div>
+                    <div class="col-lg-6">
+                  
+                        <img class="img-fluid" src="LOGO.png" >
+
+                       <b> <p>We provide the best quality products<br />
+                        in all catagories e.g electronics,grocery and more </p>
+                       
+                        <p>Our products come from various places in the world </p>
+                        <p>As our stock has different variourity products you have different choises</p></b>
+
+                    </div>
+                </div>
              
-              <p> We hope we provide the best services to you <br /> <br />Our contact is in the contact page 
-                please use that page to contact us 
-                <br /> <br /><b><i>More images of the products are shown in the display page</i></b>
-                <br /> <br /></p>
-                <p class="pp" ><b><i>Thank you for visiting our website </i></b></p>
-              <div class
-               <img class="img-fluid" src="LOGO.png" >
-                <p>We provide the best quality products<br />
-                 in all catagories e.g electronics,grocery and more </p>
-                <p>Our products come from various places in the world </p>
-                <p>As our stock has different variourity products you have different choises</p>
+              
+               
 
                <div class="row" style="border: 1px solid blue">
                    <marquee direction="left"><p style="font-size: large; ;"><b>This website is maintained and managed by the head of product-cataloque<br />

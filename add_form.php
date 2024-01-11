@@ -41,7 +41,7 @@
             <input type="text" class="form-control" name="ProductDescription" placeholder="Give a description">
 </div>
 
-        <button type="submit" class="btn btn- default">Add information</button>
+        <button type="submit" class="btn btn-success">Add information</button>
     </form>
     </div>
     </div>
