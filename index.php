@@ -16,8 +16,8 @@
             color:white;
         }
         .card {
-            background-image:url(images/p2.png);
             color:white;
+            background-image:url(images/p1.png);
         }
       </style>
        

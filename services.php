@@ -75,8 +75,7 @@ $result = mysqli_query($connect,$query);
                     <td><?php echo $row['Price'] ?></td>
                     <td><?php echo $row['Quantity'] ?></td>
                     <td><?php echo $row['ProductDescription'] ?></td>
-                    <td><a href="updateform.php?id=<?php echo $row['ID'];?>">Update Data</a>
-                    <a href="updateform.php?id=<?php echo $row['ID'];?>">Delete</a></td>
+                    <td><button><a href="updateform.php?id=<?php echo $row['ID'];?>">Update Data</a></button></td>
 
                 </tr>
                     <?php
