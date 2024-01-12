@@ -1,7 +1,8 @@
 
 <?php
     require_once("connect.php");
-    $query = "SELECT * FROM products";
+    $limit = 4;
+    $query = "SELECT * FROM products $limit";
     $result = mysqli_query($connect,$query);
 
 ?>
