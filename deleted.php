@@ -60,7 +60,7 @@ insteadOf
 <html>
     <head>
         <title>Contact page</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css"
+        <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
     <body>
 <div class="container">
@@ -459,6 +459,24 @@ if($con) {
                     }
 
                    ?>
+
+            <div class="row">
+                <?php
+
+                    function displayCurrentDateTime() {
+                    
+                        date_default_timezone_set('Africa/Nairobi');
+
+                        $currentDateTime = date('Y-m-d H:i:s');
+
+                        echo "Current Date and Time: " . $currentDateTime;
+                    }
+
+                    displayCurrentDateTime();
+
+                    ?>
+
+            </div>
       
          
        

@@ -1,8 +1,8 @@
 <?php
 
-require_once('connect.php');
-$query = "select *  from products";
-$result = mysqli_query($connect,$query);
+    require_once('connect.php');
+    $query = "select *  from products";
+    $result = mysqli_query($connect,$query);
 
 ?>
    <html>
@@ -48,42 +48,41 @@ $result = mysqli_query($connect,$query);
                             in all catagories e.g electronics,grocery and more </p>     
                     </div> 
             </div>
-            <div class="row mt-5">
+        <div class="row mt-5">
           <div class="col">
             <div class="card mt-5">
                 <div class="card-header">
                     <h2 class="display-6 text-center bg-dark">Fetch data from database to php</h2>
                 </div>
                 <div class="card-body">
-            <table class="table table-bordered text-center">
-                <tr class="bg-dark text-white">
-                    <td> ID</td>
-                    <td>ProductName</td>
-                    <td>Price</td>
-                    <td>Quantity ID</td>
-                    <td>ProductDescription</td>
-                    <td>Action</td>
-                    
-                </tr>
-                <tr>
-                   <?php
-                    while($row = mysqli_fetch_assoc($result))
-                     {
-                    ?>
-                     <td><?php echo $row['ID'] ?></td>
-                    <td><?php echo $row['ProductName'] ?></td>
-                    <td><?php echo $row['Price'] ?></td>
-                    <td><?php echo $row['Quantity'] ?></td>
-                    <td><?php echo $row['ProductDescription'] ?></td>
-                    <td><button><a href="updateform.php?id=<?php echo $row['ID'];?>">Update Data</a></button></td>
+                    <table class="table table-bordered text-center">
+                        <tr class="bg-dark text-white">
+                            <td> ID</td>
+                            <td>ProductName</td>
+                            <td>Price</td>
+                            <td>Quantity ID</td>
+                            <td>ProductDescription</td>
+                            <td>Action</td>
+                        </tr>
+                        <tr>
+                            <?php
+                              while ($row = mysqli_fetch_assoc($result))
+                              {
+                                ?>
+                            <td><?php echo $row['ID'] ?></td>
+                            <td><?php echo $row['ProductName'] ?></td>
+                            <td><?php echo $row['Price'] ?></td>
+                            <td><?php echo $row['Quantity'] ?></td>
+                            <td><?php echo $row['ProductDescription'] ?></td>
+                            <td><button><a href="updateform.php?id=<?php echo $row['ID'];?>">Update Data</a></button></td>
 
-                </tr>
+                        </tr>
                     <?php
                     }
 
                    ?>
               
-            </table>
+                    </table>
                 </div>
             </div>
           </div>

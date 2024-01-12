@@ -2,7 +2,7 @@
 <?php
     require_once("connect.php");
     $limit = 4;
-    $query = "SELECT * FROM products $limit";
+    $query = "SELECT * FROM products LIMIT $limit";
     $result = mysqli_query($connect,$query);
 
 ?>
@@ -37,17 +37,15 @@
                 <div class="col-lg-4">
                     <?php
                     include("cardsforhome/card.html")
-                    ?>
-                    
+                    ?>         
                 </div>
 
                 <div class="col-lg-4">
-                <?php
-                    include("cardsforhome/card1.html")
-                    ?>
+                    <?php
+                        include("cardsforhome/card1.html")
+                        ?>
                    <p>In our stock we provide all electric items<br />Below are common electronics in our store</p>
                     <p>Smart tvs,watches,phones<br />Fridges<br />Irons<br />Washing machines<br />and much more</p>
-               
                 </div>
 
                 <div class="col-lg-4">
@@ -128,63 +126,41 @@
 
 
             </div>
-
-
             <div class="row">
-                <?php
-
-                    function displayCurrentDateTime() {
-                    
-                        date_default_timezone_set('Africa/Nairobi');
-
-                        $currentDateTime = date('Y-m-d H:i:s');
-
-                        echo "Current Date and Time: " . $currentDateTime;
-                    }
-
-                    displayCurrentDateTime();
-
-                    ?>
-
-            </div>
-          
-            <div class="row"> 
-                <?php
-                    while ($row = mysqli_fetch_assoc($result))
-                    {  
+                <?php 
+                while ($row = mysqli_fetch_assoc($result))
+                {
                 ?>
-                <div class="col-lg-4 mb-4">
-                    <div class="card" >
-                        <div class="card-header">
-                            <?php echo $row['ID'];?>
-                        </div>
-
-                        
-                        <div class="card-body">
-                        <p class="card-text"><p><b>Product name</b></p> <?php echo $row['ProductName'];?></p>
-                        </div>
-
-                        <div class="card-body">
-                        <p class="card-text"> <p><b>Price</b></p><?php echo $row['Price'];?></p>
-                        </div>
-
-                        <div class="card-body">
-                        <p class="card-text"><p><b>Quantity</b></p> <?php echo $row['Quantity'];?></p>
-                        </div>
-
-                        <div class="card-body">
-                        <p class="card-text"><p><b>Product description</b></p> <?php echo $row['ProductDescription'];?></p>
-                        </div>
-
-
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <?php echo $row['ID'];?> 
                     </div>
-                </div>
+
+                    <div class="card-body">
+                        <p class="card-text"><p><b>Product name</b></p><?php echo $row['ProductName'];?></p> 
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text"><p><b>Price</b></p><?php echo $row['Price'];?></p>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text"><p><b>Quantity</b></p> <?php echo $row['Quantity'];?></p>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text"><p><b>Product description</b></p> <?php echo $row['ProductDescription'];?></p>
+                    </div>
+
+              
+            </div>
+            </div>
 
                 <?php
                     }
                 ?>
             </div>
-       
            
         <div class="row" style="border: 1px solid blue">
             <marquee direction="left"><p style="font-size: large;color:white ;"><b>This website is maintained and managed by the head of product-cataloque<br />

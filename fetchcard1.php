@@ -1,7 +1,7 @@
 <?php
-require_once('connect.php');
-$query = "select *  from products";
-$result = mysqli_query($connect,$query);
+    require_once("connect.php");
+    $query = "SELECT * FROM products";
+    $result = mysqli_query($connect,$query);
 ?>
    <html>
         <head>

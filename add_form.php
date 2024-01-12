@@ -6,8 +6,8 @@
     body{       
             background-image:url(screenshot.png);
             background-size:cover;
-            color: black;
-        }
+           
+        } 
     </style>
 </head>
 <body>
@@ -39,7 +39,7 @@
         <div class="form-group">
             <label>ProductDescription</label>
             <input type="text" class="form-control" name="ProductDescription" placeholder="Give a description">
-</div>
+        </div>
 
         <button type="submit" class="btn btn-success">Add information</button>
     </form>

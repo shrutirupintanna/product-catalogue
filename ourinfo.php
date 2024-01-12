@@ -27,6 +27,7 @@
 
             <div class="row" style="background-image:screenshot.png;padding-bottom:100px;">
                 <div class="col-lg-6">
+              
                         <h1  style="font-size:large; ">
                             Our contact information
                         </h1> 
@@ -35,58 +36,35 @@
                     <p><b> <i>Our email</i></b>: productcatalogue0123@gmail.com<br />
                         <b><i>Our whatsapp contacts</i></b>: + 256234567 , + 256654321 , + 256876459
                         </p>
+                        <img src="LOGO.png">
                 </div>
-                <div class="col-lg-6">
-                <h2 style="font-size:x-large; ">
-                    To reach us please fill in the form below ;
-                </h2>   
-                
-        <form>
-            <div>
-                <label><b>First Name</b></label>
-                <input type="text" placeholder="Type your first name"  name="firstName"class="form" required>
-            </div>
-    
-            <div >
-                 <label><b>Second Name</b></label>
-                <input type="text"  placeholder="Type your second name" name="lastName"class="form" required>
-            </div>
-    
-            <div>
-                 <label><b>Telephone</b></label>
-                <input type="tel" placeholder="Type your tel no." name="telephone" class="form" required>
-            </div>
-    
-            <div>
-                 <label><b>Email</b></label>
-                <input type="email" placeholder="Type your email"  name="email"class="form" required>
-            </div> 
-            <br />
+                <div class="col-lg-6" style="border :1px solid black">
+                <h1>Add information</h1>   
+    <form action="processcontact.php" method="post">
 
-           <p><b>Your gender</b></p>
-            <label for="">Male</label>
-            <input type="checkbox" name="Male">
-
-            <label for="">Female</label>
-            <input type="checkbox" name="Female">
-
-            <br />
-            <div>
-            <label><b>Address</b></label>
-            <input type="text" place holder="type your home address" name="address"class="form" required>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="Name" class="form-control" placeholder="Give the  name">
         </div>
 
-           
-            <br />
-    
-            <button type="submit" class="form" class="btn btn-default"><b>Submit</b></button>
-        </form>
-            </div>  
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="Email" >
+        </div>
+
+        <div class="form-group">
+            <label>Telephone</label>
+            <input type="text" class="form-control" name="Telephone" >
+        </div>
+
+        <button type="submit" class="btn btn-success">Add information</button>
+    </form>
+</div>
                 </div>
             </div>
                        
             
-              <img src="LOGO.png">
+           
          
 
             <div class="row" style="border: 1px solid blue;color:black">
