@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-lg-6" style="border :1px solid black">
                 <h1>Add information</h1>   
-    <form action="processcontact.php" method="post">
+    <form action="processcontact.php" method="POST">
 
         <div class="form-group">
             <label>Name</label>
@@ -63,15 +63,11 @@
                 </div>
             </div>
                        
-            
-           
-         
-
             <div class="row" style="border: 1px solid blue;color:black">
                    <marquee direction="left"><p style="font-size: large; ;"><b>This website is maintained and managed by the head of product-cataloque<br />
                     for more information please contact us using the details in this page</b></p>
                    </marquee>     
-                    </div>
+            </div>
 
         </div>
         <script src="js/bootstrap.min.js"></script>
